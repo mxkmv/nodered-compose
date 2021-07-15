@@ -5,13 +5,16 @@ For first run you should use this man: <br>
 git clone <br>
 For native start/stop actions you should use command: <br>
 <br>
-docker-compose up -d  start stack <br>
-docker-compose stop   stop stack <br>
+Start stack <br>
+docker-compose up -d  <br><br>
+Stop stack<br>
+docker-compose stop <br>
 <br>
 For comfort use you should use command: <br> <br>
-
-make docker-up    start stack <br>
-make docker-down  stop stack <br><br>
+Start stack <br>
+make docker-up <br><br>
+Stop stack <br>
+make docker-down <br><br>
 
 For another functions read Makefile and run by analogy with the previous commands.<br><br>
 
@@ -19,6 +22,7 @@ Grafana: http://ip_address:3000<br>
 Node-Red: http://ip_address:1880<br>
 Influxdb: http://ip_address:8086<br>
 <br>
+###############################################
 Don't forget include in service: <br>
 npm install node-red-contrib-wirenboard <br>
 ################################################
