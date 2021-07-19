@@ -21,7 +21,7 @@ services:
       - influxdb
   
   node-red:
-    image: nodered/node-red
+    image: nodered/node-red:1.3.5
     container_name: node-red
     user: ${MONITOR}
     environment:
@@ -35,7 +35,7 @@ services:
     restart: always
 
   influxdb:
-    image: influxdb:latest
+    image: influxdb:2.0.7
     container_name: influxdb
     ports:
        - "8086:8086"

@@ -12,9 +12,9 @@ docker-compose stop <br>
 <br>
 For comfort use you should use command: <br> <br>
 Start stack <br>
-make docker-up <br><br>
+make up <br><br>
 Stop stack <br>
-make docker-down <br><br>
+make down <br><br>
 
 For another functions read Makefile and run by analogy with the previous commands.<br><br>
 
