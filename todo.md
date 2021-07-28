@@ -3,11 +3,10 @@
  - всего стека
  - отдельного сервиса
 
-
-node-red-contrib-influxdb
---------
 проблема
 Если захожу в бд через консоль
 
 show databases
 ERR: received status code 401 from server
+
+не забыть про: node-red-contrib-influxd
