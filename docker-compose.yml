@@ -52,9 +52,23 @@ services:
         - INFLUXDB_DB=${INFLUXDB_DB}
         - INFLUXDB_USER=${INFLUXDB_USER}
         - INFLUXDB_USER_PASSWORD=${INFLUXDB_USER_PASSWORD}
-        # - INFLUXDB_ADMIN_ENABLED=true
+        - INFLUXDB_ADMIN_ENABLED=true
         - INFLUXDB_ADMIN_USER=${INFLUXDB_ADMIN_USER} 
         - INFLUXDB_ADMIN_PASSWORD=${INFLUXDB_ADMIN_PASSWORD}
+  
+  chronograf:
+    image: chronograf
+    #:1.19.2
+    container_name: chronograf
+    ports:
+      - "8087:8888"
+    volumes:
+    - ./chronograf:/var/lib/chronograf
+    restart: always
+    networks:
+      - monitoring
+    # links:
+    #   - influxdb 
 
 networks:
   monitoring:
@@ -64,4 +78,5 @@ volumes:
     grafana: {}
     node-red: {}
     influxdb: {}
+    chronograf: {}
 
