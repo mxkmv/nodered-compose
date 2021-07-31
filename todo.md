@@ -3,13 +3,13 @@
  - всего стека
  - отдельного сервиса
 
-проблема
+Проблема
 Если захожу в бд через консоль
-
 show databases
 ERR: received status code 401 from server
-
-проблема в версионности, посмотретьв эту сторону
+ Решена:
+проблема в версионности
 
 
 не забыть про: node-red-contrib-influxd
+npm install node-red-contrib-influxdb
