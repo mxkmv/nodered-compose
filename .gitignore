@@ -1,4 +1,4 @@
 grafana/
-influxdb/
+influxdbv2/
 node-red/
-chronograf/
+backup/
