@@ -9,4 +9,7 @@
 show databases
 ERR: received status code 401 from server
 
+проблема в версионности, посмотретьв эту сторону
+
+
 не забыть про: node-red-contrib-influxd
