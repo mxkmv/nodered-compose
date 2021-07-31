@@ -22,6 +22,7 @@ Grafana: http://ip_address:3000<br>
 Node-Red: http://ip_address:1880<br>
 Influxdb: http://ip_address:8086<br>
 <br>
+проверить версионность
 ###############################################
 Don't forget include in service: <br>
 npm install node-red-contrib-wirenboard <br>
