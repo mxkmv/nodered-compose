@@ -1,15 +1,15 @@
-# /etc/systemd/system/nodered.service
-# systemctl enable nodered
+# /etc/systemd/system/nodered-stack.service
+# systemctl enable nodered-stack
 
 [Unit]
 Description=Node Red Service
-Requires=nodered.service
+Requires=nodered-stack.service
 After=docker.service
 
 [Service]
 Type=oneshot
 RemainAfterExit=yes
-WorkingDirectory=/opt/nodered-compose
+WorkingDirectory=/opt/nodered-stack
 ExecStart=/usr/local/bin/docker-compose up -d
 ExecStop=/usr/local/bin/docker-compose down
 TimeoutStartSec=0
