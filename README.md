@@ -26,9 +26,3 @@ Influxdb: http://ip_address:8086<br>
 Don't forget include in service: <br>
 npm install node-red-contrib-wirenboard <br>
 ################################################
-<br>
-How to install docker-compose
-<br><br>
-sudo curl -L "https://github.com/docker/compose/releases/download/1.26.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
-<br>
-sudo chmod +x /usr/local/bin/docker-compose
