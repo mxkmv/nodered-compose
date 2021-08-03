@@ -14,7 +14,7 @@ For comfort use you should use command: <br> <br>
 Start stack <br>
 make up <br><br>
 Stop stack <br>
-make down <br><br>
+make down <br>
 
 For another functions read Makefile and run by analogy with the previous commands.<br><br>
 
@@ -22,15 +22,8 @@ Grafana: http://ip_address:3000<br>
 Node-Red: http://ip_address:1880<br>
 Influxdb: http://ip_address:8086<br>
 <br>
-проверить версионность
 
 ###############################################
 Don't forget include in service: <br>
 npm install node-red-contrib-wirenboard <br>
 ################################################
-<br>
-How to install docker-compose
-<br><br>
-sudo curl -L "https://github.com/docker/compose/releases/download/1.26.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
-<br>
-sudo chmod +x /usr/local/bin/docker-compose
