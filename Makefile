@@ -5,7 +5,7 @@ ps:
 	docker-compose ps
 # Stack build
 build:
-    docker-compose -f docker-compose.yml build 
+	docker-compose -f docker-compose.yml build 
 # Stack up
 up:	
 	docker-compose up -d
