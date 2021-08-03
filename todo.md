@@ -13,19 +13,8 @@ Git: Release 1.1
 + Проверка пользователей по сервисам
   Проверить наличие пользователя в БД
 
-Grafana: 
-  Мониторинг контейнеров
-  Проверка восприятия метрик
++ Написать install.sh
 
-
-Написать install.sh
-Причесать readme
-
-
-
-NB----
-localhost->ip_container
-подумать что с этим делать
 -----
 не забыть про: node-red-contrib-influxd
 npm install node-red-contrib-influxdb

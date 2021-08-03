@@ -9,7 +9,8 @@ After=docker.service
 [Service]
 Type=oneshot
 RemainAfterExit=yes
-WorkingDirectory=/opt/nodered-stack
+WorkingDirectory=/home/maksimk/devops/nodered-stack
+# WorkingDirectory=/opt/nodered-stack
 ExecStart=/usr/local/bin/docker-compose up -d
 ExecStop=/usr/local/bin/docker-compose down
 TimeoutStartSec=0
