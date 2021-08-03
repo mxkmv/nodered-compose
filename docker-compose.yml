@@ -36,7 +36,6 @@ services:
        - nodered-stack-networks
     restart: always
    
-
   influxdb:
     image: influxdb:1.8.0
     container_name: influxdb
