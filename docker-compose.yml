@@ -30,8 +30,8 @@ services:
        - "1880:1880"
     volumes:
        - ./node-red:/data
-    links:
-      - influxdb
+    depends_on:
+       - influxdb
     networks:
       - nodered-stack-networks  
     restart: always
@@ -60,9 +60,7 @@ services:
     volumes: 
       - ./entrypoint.sh:/docker-entrypoint-initdb.d/entrypoint.sh:ro
     depends_on:
-      - influxdb
-    # links:
-    #   - influxdb  
+      - influxdb 
     networks:
       - nodered-stack-networks  
     restart: on-failure:10
